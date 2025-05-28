@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.jpeg">
+</head>
+<body>
+    <h1>Weather App</h1> <br>
+    <h3>This website shows you the approximate value of current temperature of your provided location by using weather API provided by <b>Open-Meteo</b>.</h3> <br><br>
+    <p>Enter latitude and longitude values of your location :</p> 
+    <input type="text" placeholder="Latitude" id="lt"> <br><br>
+    <input type="text" placeholder="Longitude" id="ln"> <br><br>
+    <button>Search</button> <br><br><br>
+    <p id="result"></p> <br><br><br><br><br><br><br><br><br>
+    
+    <p><b>Description for the specific codes are given below :</b></p>
+    <table cellpadding="15">
+        <thead>
+            <tr>
+            <th>Weather Code</th>
+            <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>0</td>
+            <td>Clear sky</td>
+            </tr>
+
+            <tr>
+            <td>1, 2, 3</td>
+            <td>Mainly clear, partly cloudy, and overcast</td>
+            </tr>
+
+            <tr>
+                <td>45, 48</td>
+                <td>Fog and depositing rime fog</td>
+            </tr>
+
+            <tr>
+                <td>51, 52, 55</td>
+                <td>Drizzle: Light, moderate, and dense intensity</td>
+            </tr>
+
+            <tr>
+                <td>56, 57</td>
+                <td>Freezing Drizzle: Light and dense intensity</td>
+            </tr>
+
+            <tr>
+                <td>61, 62, 63</td>
+                <td>Rain: Slight, moderate and heavy intensity</td>
+            </tr>
+
+            <tr>
+                <td>66, 67</td>
+                <td>Freezing Rain: Light and heavy intensity</td>
+            </tr>
+
+            <tr>
+                <td>71, 73, 75</td>
+                <td>Snow fall: Slight, moderate, and heavy intensity</td>
+            </tr>
+
+            <tr>
+                <td>77</td>
+                <td>Snow grains</td>
+            </tr>
+
+            <tr>
+                <td>80, 81, 82</td>
+                <td>Rain showers: Slight, moderate, and violent</td>
+            </tr>
+
+            <tr>
+                <td>85, 86</td>
+                <td>Snow showers slight and heavy</td>
+            </tr>
+
+            <tr>
+                <td>95</td>
+                <td>Thunderstorm: Slight or moderate</td>
+            </tr>
+
+            <tr>
+                <td>96, 99</td>
+                <td>Thunderstorm with slight and heavy hail</td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
